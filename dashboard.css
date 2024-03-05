@@ -1,0 +1,23 @@
+#buttonLinkContainer {
+    -fx-background-color: linear-gradient(to right, #00c9ff, #92fe9d);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+}
+
+#buttonLinkText {
+    -fx-background-color: DODGERBLUE;
+    -fx-background-radius: 20px;
+}
+
+#buttonLink:hover {
+    -fx-cursor: hand;
+}
+
+#buttonLink:hover #buttonLinkText {
+    -fx-background-color: AQUA;
+}
+#buttonLink:hover #buttonLinkImage {
+    -fx-fill: AQUA;
+}
