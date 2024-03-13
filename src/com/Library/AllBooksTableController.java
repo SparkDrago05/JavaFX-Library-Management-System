@@ -43,26 +43,25 @@ public class AllBooksTableController implements Initializable {
         bookAuthorCol.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().author));
         bookAvailableCol.setCellValueFactory(cellData -> new SimpleBooleanProperty(cellData.getValue().available));
 
-        // bookAvailableCol.setCellFactory(column -> {
-        //     return new TableCell<Book, Boolean>() {
-        //         @Override
-        //         protected void updateItem(Boolean item, boolean empty) {
-        //             super.updateItem(item, empty);
-        //             if (empty || item == null) {
-        //                 setText(null);
-        //             } else {
-        //                 setText(item ? "Yes" : "No");
-        //                 setStyle(item ? "-fx-background-color: #00FF00" : "-fx-background-color: #FF0000");
-        //             }
-        //         }
-        //     };
-        // });
+        bookAvailableCol.setCellFactory(column -> {
+            return new TableCell<Book, Boolean>() {
+                @Override
+                protected void updateItem(Boolean item, boolean empty) {
+                    super.updateItem(item, empty);
+                    if (empty || item == null) {
+                        setText(null);
+                    } else {
+                        setText(item ? "Yes" : "No");
+                        setStyle(item ? "-fx-background-color: #00FF00" : "-fx-background-color: #FF0000");
+                    }
+                }
+            };
+        });
 
         // Add all books in the List books to this table
         // Make FXCollections.observableList of all items in the book List
         // System.out.println(Library.books);
         allBooksTable.setItems(FXCollections.observableList(Library.books));
-        // System.out.println(allBooksTable);
     }
 
 }
