@@ -12,14 +12,12 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         stage.setTitle("Library Management System");
 
-        // Parent root = FXMLLoader.load(getClass().getResource("sign.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
-        // root.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
-        root.getStylesheets().add(getClass().getResource("dashboard.css").toExternalForm());
+        Parent root = FXMLLoader.load(getClass().getResource("sign.fxml"));
+        
+        root.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
 
         Scene scene = new Scene(root, 800, 500);
-        //
-        scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+        
         stage.setScene(scene);
 
         stage.show();
