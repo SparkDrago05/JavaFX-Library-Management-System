@@ -1,0 +1,78 @@
+.root {
+    -fx-background-color: linear-gradient(to right, #00c9ff, #92fe9d);
+    /* -fx-alignment: center; */
+}
+
+#buttonLinkContainer {
+    -fx-background-color: linear-gradient(to right, #00c9ff, #92fe9d);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+}
+
+#buttonLinkText {
+    -fx-background-color: DODGERBLUE;
+    -fx-background-radius: 20px;
+}
+
+#buttonLink:hover {
+    -fx-cursor: hand;
+}
+
+#buttonLink:hover #buttonLinkText {
+    -fx-background-color: AQUA;
+}
+#buttonLink:hover #buttonLinkImage {
+    -fx-fill: AQUA;
+}
+
+.navButton {
+    -fx-background-color: linear-gradient(to right, #00c9ff, #92fe9d);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+}
+
+.navButton:hover {
+    -fx-cursor: hand;
+    -fx-background-color: AQUA;
+}
+
+.navButton:pressed {
+    -fx-background-color: AQUA;
+}
+
+#issueBookButton {
+    -fx-background-color: linear-gradient(to right, orange, yellow);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+}
+
+#issueBookButton:hover {
+    -fx-background-color: linear-gradient(to right, yellow, orange);
+}
+
+#returnBookButton {
+    -fx-background-color: linear-gradient(to right, orange, yellow);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+}
+
+#returnBookButton:hover {
+    -fx-background-color: linear-gradient(to right, yellow, orange);
+}
+
+#createUserButton {
+    -fx-background-color: linear-gradient(to right, orange, yellow);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+}
+
+#createUserButton:hover {
+    -fx-background-color: linear-gradient(to right, yellow, orange);
+}

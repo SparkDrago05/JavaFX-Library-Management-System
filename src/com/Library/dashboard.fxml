@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="dashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Library.DashboardController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="110.0" prefWidth="182.0" text="Library Management System" textAlignment="CENTER" textFill="#f80874" wrapText="true">
+               <font>
+                  <Font name="FontAwesome" size="18.0" />
+               </font>
+            </Label>
+            <VBox alignment="TOP_CENTER" layoutX="12.0" layoutY="108.0" prefHeight="474.0" prefWidth="177.0" spacing="20.0">
+               <children>
+                  <JFXButton onAction="#showBooksView" prefHeight="60.0" prefWidth="155.0" styleClass="navButton" text="Books" />
+                  <JFXButton onAction="#openAddBookDialog" prefHeight="60.0" prefWidth="155.0" styleClass="navButton" text="Add Book" />
+                  <JFXButton onAction="#showIssueBookView" prefHeight="60.0" prefWidth="155.0" styleClass="navButton" text="Issue Book" />
+                  <JFXButton onAction="#showUsersTable" prefHeight="60.0" prefWidth="155.0" styleClass="navButton" text="Users" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <StackPane fx:id="dashboardStack" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

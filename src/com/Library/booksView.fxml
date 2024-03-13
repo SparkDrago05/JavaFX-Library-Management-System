@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Library.BooksViewController">
+   <children>
+      <AnchorPane id="buttonLinkContainer" layoutX="23.0" layoutY="72.0" prefHeight="105.0" prefWidth="270.0">
+         <children>
+            <Pane id="buttonLink" fx:id="viewAllBooks" layoutX="19.0" layoutY="14.0" onMouseClicked="#viewAllBooksClicked" prefHeight="70.0" prefWidth="180.0">
+               <children>
+                  <AnchorPane id="buttonLinkText" layoutX="55.0" layoutY="18.0" prefHeight="45.0" prefWidth="165.0">
+                     <children>
+                        <Label layoutX="24.0" layoutY="15.0" prefHeight="16.0" prefWidth="109.0" text="View All Books">
+                           <font>
+                              <Font name="DejaVuMathTeXGyre-Regular" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Circle id="buttonLinkImage" fill="DODGERBLUE" layoutX="35.0" layoutY="41.0" radius="35.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="53.0" fitWidth="56.0" layoutX="7.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@books.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="buttonLinkContainer" layoutX="307.0" layoutY="72.0" prefHeight="105.0" prefWidth="270.0">
+         <children>
+            <Pane id="buttonLink" fx:id="viewIssuedBooks" layoutX="19.0" layoutY="14.0" onMouseClicked="#viewIssuedBooksClicked" prefHeight="70.0" prefWidth="180.0">
+               <children>
+                  <AnchorPane id="buttonLinkText" layoutX="55.0" layoutY="18.0" prefHeight="45.0" prefWidth="165.0">
+                     <children>
+                        <Label layoutX="24.0" layoutY="15.0" text="View Issued Books">
+                           <font>
+                              <Font name="DejaVuMathTeXGyre-Regular" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Circle id="buttonLinkImage" fill="DODGERBLUE" layoutX="35.0" layoutY="41.0" radius="35.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="53.0" fitWidth="56.0" layoutX="7.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@books.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="tableStack" layoutX="23.0" layoutY="205.0" prefHeight="381.0" prefWidth="555.0" />
+   </children>
+</AnchorPane>

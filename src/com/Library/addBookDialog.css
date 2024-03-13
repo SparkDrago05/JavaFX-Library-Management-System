@@ -1,0 +1,14 @@
+.button {
+    -fx-background-color: #4caf50; /* Green */
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-cursor: hand; /* Cursor on hover */
+    -fx-background-radius: 20; /* Make border rounded */
+}
+
+.button:hover {
+    -fx-border-radius: 20; /* Make border rounded */
+    -fx-border-color: #4caf50; /* Change border color to green on hover */
+    -fx-background-color: #f1f1f1; /* Change background color to white on hover */
+    -fx-text-fill: #4caf50; /* Change text color to green on hover */
+}
