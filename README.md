@@ -1,18 +1,24 @@
-## Getting Started
+## Library Management System
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+> This is a Simple GUI Library Management System built in Java using JavaFX
+and SQLite. It allows a Librarian to add books and users. Issue and return books
+to/from Users.
 
 ## Folder Structure
-
-The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Dependencies
+- JavaFX
+- JFoenix
+- SL4J
+- SQLite
 
-## Dependency Management
+## Setup
+Download the repository and Run the code through the `App.java` File.
+The Email and Password are `admin` and `admin`.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Screenshots
+[![image](https://imgur.com/a/MXepYF0)](https://imgur.com/a/MXepYF0)
